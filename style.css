@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+/* nav */
+
+nav {
+    padding: 0px 0px !important;
+}
+
+.nav-ank {
+    padding: 0px 5px;
+    color: black;
+}
+
+.nav-ank:hover {
+    color: rgb(54, 199, 151);
+}
+
+.nav-icons {
+    padding-right: 20px;
+}
+
+.phone {
+    color: red;
+    font-size: 14px;
+    border-right: 1px solid gray;
+    padding-right: 10px;
+    cursor: pointer;
+
+
+}
+
+.ankers {
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.ankers:hover {
+    color: red;
+}
+
+.anker2 {
+    background-color: red;
+    color: white;
+    padding: 45px 35px;
+    cursor: pointer;
+}
+
+.anker2:hover {
+    color: rgb(1, 13, 30);
+}
+
+@media (max-width:1200px) {
+    .ankers {
+        display: none;
+    }
+
+    .phone {
+        border: none;
+    }
+}
+
+@media (max-width:992px) {
+    nav {
+        padding-bottom: 8px !important;
+    }
+
+    .ankers {
+        display: block;
+    }
+
+    .anker2 {
+        padding: 20px 17px;
+        margin-right: 55px;
+    }
+
+
+
+    /* Hamburger */
+
+    .hamburger-wrapper {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: -40px;
+        background-color: #4c4c4c;
+        padding: 10px;
+        z-index: 10;
+        display: flex;
+        justify-content: end;
+    }
+
+    #hamburger {
+        font-size: 16px;
+        font-weight: 799;
+        color: white;
+        background-color: black;
+        padding: .438em .625em;
+        text-transform: uppercase;
+    }
+
+    #navbarSupportedContent {
+        position: absolute;
+        z-index: 10;
+        background-color: #4c4c4c;
+        top: 124px;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+/* header */
+
+
+
+
+.slide-img {
+    padding: 0px 00px;
+}
+
+.nothing-you-could-do-regular {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.about-country {
+    font-size: 33px;
+}
+
+.hero-head {
+    padding: 20px 0px;
+    /* top: 0;
+    left: 0;
+    right: 0;*/
+    color: white;
+    text-align: center;
+    padding: 100px 0px;
+    /* position: absolute; */
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.explore-btn {
+    background-color: #1ec6b6;
+    border: none;
+    border-radius: 3px;
+    padding: 18px 41px;
+    font-weight: bold;
+    margin-bottom: 170px !important;
+}
+
+.explore-btn:hover {
+    background-color: #ff4a52;
+    transition-duration: 300ms;
+}
+
+/* form section */
+
+
+
+.where-go {
+    color: white;
+}
+
+.form {
+    background-color: #040e27;
+}
+
+#where {
+    padding: 13px 2px 13px 15px;
+    background-color: #040e27;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: white;
+    border-color: grey;
+
+}
+
+#date {
+    padding: 13px 48px 13px 15px;
+    background-color: #040e27;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: gray;
+    border-color: grey;
+
+}
+
+.type {
+    padding: 13px 88px 13px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: gray;
+    border-color: grey;
+}
+
+.type:active {
+    padding: 13px 88px 13px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: gray;
+    border-color: grey;
+}
+
+.type:hover {
+    padding: 13px 88px 13px 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: gray;
+    border-color: grey;
+}
+
+.dowm {
+    padding: 0px 54px 0px 2px;
+}
+
+.search-btn {
+    padding: 13px 45px;
+    border: 1px solid #1ec6b6;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    background-color: #1ec6b6;
+
+}
+
+.search-btn:hover {
+    background-color: #ff4a52;
+    color: white;
+    transition-duration: 300ms;
+}
+
+
+/*  popular Destination section */
+
+
+
+.popular {
+    font-size: 38px;
+    text-align: center;
+}
+
+.shuffled {
+    color: #7a838b;
+    margin-top: 14px;
+}
+
+.place-card {
+    position: relative;
+}
+
+.country {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    font-size: 22px;
+    color: hotpink;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.no-places {
+    background-color: #1ec6b6;
+    font-size: 14px;
+    border-radius: 18px;
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.place-card:hover .no-places {
+    background-color: #ff4a52;
+    color: white;
+    transition-duration: 300ms;
+}
+
+.place-card:hover .country {
+    color: #ff4a52;
+    transition-duration: 300ms;
+}
+
+
+.place-card:hover {
+    transform: translateY(-20px);
+    transition-duration: 400ms;
+}
+
+/* Subscribe section */
+
+.sub-div {
+    background-image: url(https://preview.colorlib.com/theme/travelo/img/banner/newsletter.png.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* padding: 67px 0; */
+}
+
+.Sub-section {
+    padding: 142px 0px 140px 0px;
+}
+
+.back-black {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#email {
+    padding: 10px 100px 10px 15px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: grey;
+}
+
+.subscribe-btn {
+    background-color: #ff4a52;
+    color: white;
+    padding: 10px 29px;
+    font-weight: 500;
+}
+
+.subscribe-btn:hover {
+    background-color: #1ec6b6;
+    color: white;
+
+}
+
+/* 
+@media (max-width:455px) {
+    .subscribe-btn {
+        margin-top: 20px;
+    }
+} */
+
+/* Popular section */
+.places {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.dollar-position {
+    position: relative;
+}
+
+.dollars {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #1ec6b6;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.stars {
+    color: rgb(38, 55, 247);
+    font-size: 12px;
+}
+
+.card-text {
+    color: #7a838b;
+}
+
+/* 
+.card-title:hover {
+    color: #ff4a52;
+    cursor: pointer;
+} */
+
+.reviews {
+    color: #7a838b;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.days {
+    cursor: pointer;
+    color: grey;
+}
+
+.deal-cards:hover .dollars {
+    background-color: #ff4a52;
+    transition-duration: 300ms;
+}
+
+.deal-cards {
+    border: none;
+    background-color: #f7fafd;
+}
+
+.Popular-section {
+    padding-bottom: 120px;
+}
+
+.deal-cards:hover {
+    transition-duration: 300ms;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+/* .card:hover {
+        border: none;
+        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.4);
+    } */
+
+.adfdr {
+    color: #f7fafd;
+}
+
+
+.deal-cards:hover .name {
+    color: #ff4a52;
+    transition-duration: 300ms;
+}
+
+
+.place-btn {
+    color: white;
+    background-color: #ff4a52;
+    font-weight: 500;
+    padding: 13px 39px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.place-btn:hover {
+    color: white;
+    background-color: #1ec6b6;
+    transition-duration: 300ms;
+}
+
+/* video section */
+.video-bg {
+    background-image: url(https://preview.colorlib.com/theme/travelo/img/banner/video.png.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 190px 0;
+}
+
+.enjoy {
+    margin-bottom: 70px;
+}
+
+.nothing-you-could-do-regular2 {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+}
+
+.play-btn {
+    color: white;
+    font-size: 17px;
+    background-color: #1ec6b6;
+    padding: 30px 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* feature section */
+.features {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.wonderful {
+    color: #7a838b;
+}
+
+/* slider section */
+.carousel-indicators {
+    bottom: 33px;
+
+}
+
+.round {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.bg-co {
+    background-color: #f7fafd;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.woman-img {
+    position: relative;
+}
+
+.coma {
+    color: white;
+    background-color: #1ec6b6;
+    padding: 10px 15px;
+    font-size: 28px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 20;
+    /* top: 0; */
+    bottom: -35px;
+    left: auto;
+    right: auto;
+}
+
+/* Recent Trips section */
+.recent {
+    font-size: 32px;
+    text-align: center;
+
+}
+
+.con-of-recent {
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+
+.cycle:hover .jounery {
+    color: #ff4a52;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+/* footer */
+footer {
+    background-color: #040e27;
+    color: white;
+}
+
+.face-f {
+    color: #7a838b;
+}
+
+.face-f:hover {
+    color: #ff4a52;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.foot-ank {
+    color: hsl(208, 7%, 51%);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.foot-ank:hover {
+    color: #ff4a52;
+    transition-duration: 400ms;
+}
+
+.foot-li {
+    margin: 10px 0px !important;
+}
+
+.company {
+    font-size: 20px;
+}
+
+.small-img {
+    border-radius: 11px;
+}
+
+.footpart {
+    padding: 115px 0px 150px 0px;
+}
+
+.last-line {
+    color: #7a838b;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 0px 20px 0px;
+}
+
+.last-ank {
+    color: #ff4a52;
+    text-decoration: none;
+}
+
+.last-ank:hover {
+    cursor: pointer;
+}
