@@ -120,8 +120,38 @@ nav {
 
 /* header */
 
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+}
 
+.carousel-control-prev {
+    justify-content: left;
+}
 
+.carousel-control-next {
+    justify-content: right;
+}
+
+.carousel-indic-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 40px 20px;
+    color: black;
+    transition: 300ms;
+}
+
+.carousel-indic-btn i {
+    color: white;
+}
+
+.carousel-indic-btn:hover {
+    background-color: white;
+}
+
+.carousel-indic-btn:hover i {
+    color: black;
+}
 
 .slide-img {
     padding: 0px 00px;
